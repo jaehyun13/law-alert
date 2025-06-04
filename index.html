@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>실시간 법안 알리미</title>
+  <meta charset="UTF-8" />
+  <title>전체 법안 알리미</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .date {
+      font-size: 0.9em;
+      color: #666;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .summary {
+      margin-top: 5px;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-  <h1>📰 최신 법안 리스트</h1>
-  <div id="laws">로딩 중…</div>
+  <h1>📜 전체 법안 알리미</h1>
+  <div id="laws">법안 정보를 불러오는 중입니다...</div>
 
-  <!-- 법안 목록을 채워 넣는 스크립트 -->
   <script src="laws.js"></script>
 </body>
 </html>
